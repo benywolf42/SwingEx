@@ -125,3 +125,31 @@ public class Main {
         );
     }
 }
+
+=======================================================================
+
+#SwingEx04
+
+package com.company;
+
+import javax.swing.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+	    String numeroAsteriscos = JOptionPane.showInputDialog(null,
+                "Digite a quantidade de de linhas e colunas: ",
+                "Quantidade de asteriscos",
+                JOptionPane.QUESTION_MESSAGE
+        );
+
+	    int numeroInt = Integer.parseInt(numeroAsteriscos);
+	    int linhas;
+	    int colunas;
+
+        for (linhas = 1; linhas <= numeroInt; linhas++){
+            System.out.print("*");
+        }
+        
+    }
+}
