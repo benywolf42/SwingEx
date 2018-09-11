@@ -96,6 +96,32 @@ public class Main {
         }
     }
 }
+
 =========================================================================
 
 #SwingEx03
+
+package com.company;
+
+import javax.swing.*;
+
+public class Main {
+    static String cinquentinha;
+    static int cinquentaInt = 0;
+    public static void main(String[] args) {
+
+        while (cinquentaInt != 50) {
+            cinquentinha = JOptionPane.showInputDialog(null,
+                    "Digite o número correto: ",
+                    "50",
+                    JOptionPane.WARNING_MESSAGE
+            );
+            cinquentaInt = Integer.parseInt(cinquentinha);
+        }
+        JOptionPane.showMessageDialog(null,
+                "Número correto",
+                "50",
+                JOptionPane.INFORMATION_MESSAGE
+        );
+    }
+}
